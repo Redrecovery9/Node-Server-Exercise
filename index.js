@@ -1,6 +1,7 @@
 var express = require('express')
 var server = express()
 var jonathan = require('./me.json')
+var port = 3000
 
 server.get('/', function (request, response) {
   response.send('Go to /jonathan to find out more about me')
@@ -15,4 +16,4 @@ server.get('*', function (request, response) {
   response.send('OH NO!!!!')
 })
 
-server.listen(3000)
+server.listen(process.env.PORT || port)
