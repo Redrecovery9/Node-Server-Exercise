@@ -1,6 +1,14 @@
 var express = require('express')
 var server = express()
+var jonathan = require('./me.json')
 
 server.get('/', function (request, response) {
-  response.send('Hey I know what I\'m doing!!')
+  response.send('Go to /jonathan to find out more about me')
 })
+
+server.get('*', function (request, response) {
+  response.status(400)
+  response.send('OH NO!!!!')
+})
+
+server.listen(3000)

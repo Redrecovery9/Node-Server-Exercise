@@ -1,0 +1,12 @@
+{
+  "full-name": "Jonathan Sax",
+  "age": "21",
+  "pet": [
+    {
+      "name": "Jeter",
+      "kind": "cat",
+      "type": "Mexican Ocelot",
+      "color": "black"
+    }
+  ],
+}
